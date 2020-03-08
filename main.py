@@ -8,18 +8,23 @@
 # getCommon(list1, list2) should return 
 # ["B", "C", 3]
 
+input1 = input("What list would you like 1st?").split(" ")
+input2 = input("What list would you like 2nd?").split(" ")
+
 def getCommon(listA, listB):
   common = []
   for item in listB:
     if item in listA:
       common.append(item)
-      
-  return common
+  if len(common) >= 5:
+    print("False")
+  else:
+    print("True")
+    print(common)
 
 
+list1 = input1
+list2 = input2
 
-list1 = ["A", 1, 3, "B", "C"]
-list2 = ["B", "C", 3, "D"]
 answer = getCommon(list1, list2)
-print(answer)
-print(list1)
+
