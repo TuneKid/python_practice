@@ -17,10 +17,17 @@ def fizzbuzz(number):
     storage.append('buzz')  
   return ("".join(storage))
 
+
+def init():
+  counter = 1
+  while counter <= 100:
+    number = counter
+    print(number , " -> " , fizzbuzz(number))
+    counter += 1
+    
+init()
+
 #fizzbuzz(number)
 
-print("15", fizzbuzz(15))
-print("5", fizzbuzz(5))
-print("3", fizzbuzz(3))
-print("4", fizzbuzz(4))
+
 
