@@ -7,22 +7,20 @@
 # e.g 6 % 3 = 0, so yes divisible by 3
 
 
-number = int(input('What number would you like?'))
+# number = int(input('What number would you like?'))
 
 def fizzbuzz(number):
-  message = ''
-  if number % 15 == 0:
-    message = 'fizzbuzz'
-  elif number % 5 == 0:
-    message = 'buzz'
-  elif number % 3 == 0:
-    message = 'fizz'
-  print(message)
+  storage = []
+  if number % 3 == 0:
+    storage.append('fizz')
+  if number % 5 == 0:
+    storage.append('buzz')  
+  return ("".join(storage))
 
-fizzbuzz(number)
+#fizzbuzz(number)
 
-# fizzbuzz(3) -> fizz 
-# fizzbuzz(5) -> buzz 
-# fizzbuzz(15) -> fizzbuzz 
-# fizzbuzz(4)) -> nothing
+print("15", fizzbuzz(15))
+print("5", fizzbuzz(5))
+print("3", fizzbuzz(3))
+print("4", fizzbuzz(4))
 
